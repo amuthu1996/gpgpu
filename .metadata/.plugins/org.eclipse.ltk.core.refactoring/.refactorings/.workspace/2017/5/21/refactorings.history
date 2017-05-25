@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;trans_2d.cu&apos; to &apos;trans_2d&apos;" description="Rename resource &apos;trans_2d.cu&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/trans_2d.cu" name="trans_2d" stamp="1495641525661" updateReferences="true"/>
+</session>

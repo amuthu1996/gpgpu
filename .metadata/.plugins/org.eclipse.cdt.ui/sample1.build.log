@@ -1,0 +1,20 @@
+10:34:55 **** Incremental Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+Finished building: ../ex1.cu
+ 
+Building target: sample1
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52 -link -o  "sample1"  ./ex1.o   
+Finished building target: sample1
+ 
+
+10:34:57 Build Finished (took 1s.314ms)
+

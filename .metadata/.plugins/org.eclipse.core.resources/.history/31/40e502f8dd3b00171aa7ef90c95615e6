@@ -1,0 +1,87 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include <time.h>
+
+//kernel
+__global__
+vecAddKernel(float *A, float *B, float *C, unsigned int N){
+	
+	unsigned int idx = blockIdx.x * blockDim.x + threadIDx.x;
+	if(idx < N){
+		C[idx] = A[idx] + B[idx];
+	}
+}
+
+int main(){
+	
+	unsigned int N = 20000000;
+	float *A_h, *B_h,*C_h;
+	float *A_d, *B_d,*C_d;
+	
+	// Allocate host memory
+	A_h = (float *)malloc(N * sizeof(float));
+	B_h = (float *)malloc(N * sizeof(float));
+	C_h = (float *)malloc(N * sizeof(float));
+	
+	for (unsigned int i = 0; i<N, i++){
+		A_h[i] = 1.0f;
+		B_h[i] = 2.0f;
+	}
+	
+	// Allocate device memory
+	cudaStatus = cudaMalloc(&A_d, N*sizeof(float));
+	if(cudaStatus != cudaSuccess)
+		printf('failed\n');
+	cudaMalloc(&B_d, N*sizeof(float));
+	cudaMalloc(&C_d, N*sizeof(float));
+	
+	//memory copy from host to device
+	cudaMemcpy(A_d, A_h, N*sizeof(float), cudaMemoryHostToDevice);
+	cudaMemcpy(B_d, B_h, N*sizeof(float), cudaMemoryHostToDevice);
+	
+	unsigned int blockSize = 1024;
+	unsigned int gridSize = (unsigned int)ceil((double)N/blockSize);
+	//dim3 gridDim =   
+	
+	clock_t start = clock();
+	vecAddKernal<<< gridSize, blockSize >>>(A_d, B_d, C_d, N);
+	clock_t end = clock();
+	clock_t gpu_time = end - start;
+	
+	printf("GPU Computation over, time: %f \n", (double)gpu_time);
+	cudaMemcpy(C_h, C_d, N*sizeof(float), cudaMemcpyDeviceToHost);
+	
+	float *C_ht;
+	C_ht = (float *)Malloc(N * sizeof(float));
+	start = clock();
+	for(unsigned int i = 0; i < N; i++){
+		C_ht[i] = A_h[i] + B_h[i];
+	}
+	clock_t end = clock();
+	clock_t cpu_time = end - start;
+	printf("CPU Computation over, time: %f \n", (double)gpu_time);
+	
+	printf("GPU is %f times faster\n", (double)cpu_time/gpu_time)
+	bool valid = true;
+	
+	for(unsigned int i = 0; i < N; i++){
+		if(C_h[i] != C_ht[i]){
+			printf("Wrong! %f vs %f\n", C_h[i], C_ht[i]);
+			valid = false;
+			break;
+		}
+	}
+	printf("Correct!!\n");
+	
+	cudaFree(A_d);
+	cudaFree(B_d);
+	cudaFree(C_d);
+	
+	free(A_h);
+	free(B_h);
+	free(C_h);
+	free(C_ht);
+	
+	return 0;
+}

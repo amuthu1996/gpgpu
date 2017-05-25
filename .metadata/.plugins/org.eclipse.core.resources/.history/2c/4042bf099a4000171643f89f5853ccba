@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<cuda.h>
+#include<math.h>
+
+#define X 1000
+#define Y 1000
+
+__global__
+void vecTranspose(int *A, int *T, unsigned int N){
+
+	unsigned int row = blockIdx.y * blockDim.y + threadIdx.y;
+	unsigned int col = blockIdx.x * blockDim.x + threadIdx.x;
+
+	if(row < X && col < Y){
+		T[row*Y + col] = A[col*X + row];
+	}
+}
+
+int main(){
+	unsigned int N = 1000000;
+	int *A_h, *A_d, *A_th, *A_td;
+
+	A_h = (int *)malloc(N * sizeof(int));
+	srand(time(NULL));
+	//initaializing 0-99 to all index
+	for(unsigned int i=0;i<N;i++){
+		A_h[i] = (rand()%100);
+	}
+
+	// Allocate device memory
+	cudaMalloc(&A_d, N*sizeof(int));
+
+	//memory copy from host to device
+	cudaMemcpy(A_d, A_h, N*sizeof(int), cudaMemcpyHostToDevice);
+	// Allocate device memory for transpose
+	cudaMalloc(&A_td, N*sizeof(int));
+
+	dim3 dimBlock(32,32,1);
+	dim3 dimGrid(ceil((double)X/32), ceil((double)X/32) , 1);
+
+	vecTranspose<<< dimGrid, dimBlock >>>(A_d, A_td, N);
+
+	A_th = (int *)malloc(N * sizeof(int));
+	cudaMemcpy(A_th, A_td, N*sizeof(int), cudaMemcpyDeviceToHost);
+	printf("GPU Computation is Over\n");
+
+	// freeing the device memory
+	cudaFree(A_d);
+	cudaFree(A_td);
+
+	bool flag = true;
+	for(unsigned int row = 0; row<X && flag; row++){
+		for(unsigned int col = 0; col<Y && flag; col++){
+			if(A_h[row*Y + col] != A_th[col*X + row])
+			{
+				flag = false;
+				printf("Error\nValues: %d %d\n Row: %d, Col: %d\n",A_h[row*Y + col], A_th[col*X + row],row,col);
+				break;
+			}
+		}
+	}
+
+	if(flag)
+		printf("Perfect!!!\n");
+
+	free(A_h);
+	free(A_th);
+	return 0;
+}

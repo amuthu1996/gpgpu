@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<cuda.h>
+#include<math.h>
+
+int main(){
+	unsigned int N = 1000000;
+	int *A_h,*A_d;
+
+	A_h = (int *)malloc(N * sizeof(int));
+	srand(time(NULL));
+	//initaializing 0-99 to all index
+	for(unsigned int i=0;i<N;i++){
+		A_h[i] = (rand()%100);
+	}
+
+	// Allocate device memory
+	cudaMalloc(&A_d, N*sizeof(int));
+
+	//memory copy from host to device
+	cudaMemcpy(A_d, A_h, N*sizeof(int), cudaMemcpyHostToDevice);
+
+	unsigned int blockSize = 1024;
+	unsigned int gridSize = (unsigned int)ceil((double)N/blockSize);
+
+	vecTranspose<<< gridSize, blockSize >>>(A_d, N);
+
+	cudaMemcpy(A_h, A_d, N*sizeof(int), cudaMemcpyDeviceToHost);
+	printf("Computation is Over\n");
+	return 0;
+}

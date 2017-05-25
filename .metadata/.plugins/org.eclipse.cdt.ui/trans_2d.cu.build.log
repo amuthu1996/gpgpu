@@ -1,0 +1,16 @@
+10:58:25 **** Build of configuration Debug for project trans_2d.cu ****
+make all 
+Building file: ../trans_2d.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "trans_2d.d" "../trans_2d.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "trans_2d.o" "../trans_2d.cu"
+Finished building: ../trans_2d.cu
+ 
+Building target: trans_2d.cu
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52 -link -o  "trans_2d.cu"  ./trans_2d.o   
+Finished building target: trans_2d.cu
+ 
+
+10:58:26 Build Finished (took 1s.312ms)
+

@@ -1,0 +1,518 @@
+10:25:44 **** Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(10): error: identifier "threadIDx" is undefined
+
+../ex1.cu(27): warning: expression has no effect
+
+../ex1.cu(27): error: expected a ";"
+
+../ex1.cu(33): error: identifier "cudaStatus" is undefined
+
+../ex1.cu(35): warning: too many characters in character literal -- extra leading characters ignored
+
+../ex1.cu(35): error: argument of type "int" is incompatible with parameter of type "const char *"
+
+../ex1.cu(40): error: identifier "cudaMemoryHostToDevice" is undefined
+
+../ex1.cu(48): error: identifier "vecAddKernal" is undefined
+
+../ex1.cu(56): error: identifier "Malloc" is undefined
+
+../ex1.cu(61): error: "end" has already been declared in the current scope
+
+../ex1.cu(66): error: expected a ";"
+
+../ex1.cu(71): error: identifier "valid" is undefined
+
+10 errors detected in the compilation of "/tmp/tmpxft_00006f54_00000000-7_ex1.cpp1.ii".
+make: *** [ex1.o] Error 2
+10:27:35 **** Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(27): warning: expression has no effect
+
+../ex1.cu(27): error: expected a ";"
+
+../ex1.cu(33): error: identifier "cudaStatus" is undefined
+
+../ex1.cu(35): warning: too many characters in character literal -- extra leading characters ignored
+
+../ex1.cu(35): error: argument of type "int" is incompatible with parameter of type "const char *"
+
+../ex1.cu(40): error: identifier "cudaMemoryHostToDevice" is undefined
+
+../ex1.cu(48): error: identifier "vecAddKernal" is undefined
+
+../ex1.cu(66): error: expected a ";"
+
+../ex1.cu(71): error: identifier "valid" is undefined
+
+7 errors detected in the compilation of "/tmp/tmpxft_00006fac_00000000-7_ex1.cpp1.ii".
+make: *** [ex1.o] Error 2
+10:29:03 **** Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(34): warning: too many characters in character literal -- extra leading characters ignored
+
+../ex1.cu(34): error: argument of type "int" is incompatible with parameter of type "const char *"
+
+../ex1.cu(39): error: identifier "cudaMemoryHostToDevice" is undefined
+
+../ex1.cu(47): error: identifier "vecAddKernal" is undefined
+
+../ex1.cu(65): error: expected a ";"
+
+../ex1.cu(70): error: identifier "valid" is undefined
+
+5 errors detected in the compilation of "/tmp/tmpxft_00007007_00000000-7_ex1.cpp1.ii".
+make: *** [ex1.o] Error 2
+10:30:35 **** Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(34): warning: too many characters in character literal -- extra leading characters ignored
+
+../ex1.cu(34): error: argument of type "int" is incompatible with parameter of type "const char *"
+
+../ex1.cu(39): error: identifier "cudaMemoryHostToDevice" is undefined
+
+../ex1.cu(47): error: identifier "vecAddKernal" is undefined
+
+../ex1.cu(65): error: expected a ";"
+
+../ex1.cu(70): error: identifier "valid" is undefined
+
+5 errors detected in the compilation of "/tmp/tmpxft_0000705d_00000000-7_ex1.cpp1.ii".
+make: *** [ex1.o] Error 2
+10:32:16 **** Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(39): error: identifier "cudaMemoryHostToDevice" is undefined
+
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+1 error detected in the compilation of "/tmp/tmpxft_000070b9_00000000-7_ex1.cpp1.ii".
+make: *** [ex1.o] Error 2
+10:32:55 **** Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+Finished building: ../ex1.cu
+ 
+Building target: sample1
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52 -link -o  "sample1"  ./ex1.o   
+Finished building target: sample1
+ 
+10:32:58 **** Incremental Build of configuration Debug for project sample1 ****
+make all 
+make: Nothing to be done for `all'.
+10:33:23 **** Incremental Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+Finished building: ../ex1.cu
+ 
+Building target: sample1
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52 -link -o  "sample1"  ./ex1.o   
+Finished building target: sample1
+ 
+10:34:31 **** Incremental Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+Finished building: ../ex1.cu
+ 
+Building target: sample1
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52 -link -o  "sample1"  ./ex1.o   
+Finished building target: sample1
+ 
+10:34:43 **** Incremental Build of configuration Debug for project sample1 ****
+make all 
+make: Nothing to be done for `all'.
+10:34:55 **** Incremental Build of configuration Debug for project sample1 ****
+make all 
+Building file: ../ex1.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "ex1.d" "../ex1.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "ex1.o" "../ex1.cu"
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+../ex1.cu(65): warning: variable "valid" was set but never used
+
+Finished building: ../ex1.cu
+ 
+Building target: sample1
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52 -link -o  "sample1"  ./ex1.o   
+Finished building target: sample1
+ 
+10:22:27 **** Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+../trans.cu(9): error: this declaration has no storage class or type specifier
+
+../trans.cu(10): error: expected a ";"
+
+../trans.cu(39): warning: parsing restarts here after previous syntax error
+
+../trans.cu(41): error: this declaration has no storage class or type specifier
+
+../trans.cu(41): error: declaration is incompatible with "cudaError_t cudaMemcpy(void *, const void *, size_t, cudaMemcpyKind)"
+/usr/local/cuda-8.0/bin/../targets/x86_64-linux/include/cuda_runtime_api.h(4130): here
+
+../trans.cu(41): error: identifier "A_h" is undefined
+
+../trans.cu(41): error: expected a ")"
+
+../trans.cu(42): error: this declaration has no storage class or type specifier
+
+../trans.cu(42): error: declaration is incompatible with "int printf(const char *, ...)"
+/usr/local/cuda-8.0/bin/../targets/x86_64-linux/include/common_functions.h(129): here
+
+../trans.cu(42): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+../trans.cu(43): error: expected a declaration
+
+../trans.cu(44): error: expected a declaration
+
+11 errors detected in the compilation of "/tmp/tmpxft_00006eda_00000000-7_trans.cpp1.ii".
+make: *** [trans.o] Error 2
+10:23:18 **** Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+../trans.cu(9): error: this declaration has no storage class or type specifier
+
+../trans.cu(10): error: expected a ";"
+
+../trans.cu(39): warning: parsing restarts here after previous syntax error
+
+../trans.cu(41): error: this declaration has no storage class or type specifier
+
+../trans.cu(41): error: declaration is incompatible with "cudaError_t cudaMemcpy(void *, const void *, size_t, cudaMemcpyKind)"
+/usr/local/cuda-8.0/bin/../targets/x86_64-linux/include/cuda_runtime_api.h(4130): here
+
+../trans.cu(41): error: identifier "A_h" is undefined
+
+../trans.cu(41): error: expected a ")"
+
+../trans.cu(42): error: this declaration has no storage class or type specifier
+
+../trans.cu(42): error: declaration is incompatible with "int printf(const char *, ...)"
+/usr/local/cuda-8.0/bin/../targets/x86_64-linux/include/common_functions.h(129): here
+
+../trans.cu(42): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+../trans.cu(43): error: expected a declaration
+
+../trans.cu(44): error: expected a declaration
+
+11 errors detected in the compilation of "/tmp/tmpxft_00006f31_00000000-7_trans.cpp1.ii".
+make: *** [trans.o] Error 2
+10:25:06 **** Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+../trans.cu(9): error: this declaration has no storage class or type specifier
+
+../trans.cu(10): error: expected a ";"
+
+../trans.cu(39): warning: parsing restarts here after previous syntax error
+
+../trans.cu(41): error: this declaration has no storage class or type specifier
+
+../trans.cu(41): error: declaration is incompatible with "cudaError_t cudaMemcpy(void *, const void *, size_t, cudaMemcpyKind)"
+/usr/local/cuda-8.0/bin/../targets/x86_64-linux/include/cuda_runtime_api.h(4130): here
+
+../trans.cu(41): error: identifier "A_h" is undefined
+
+../trans.cu(41): error: expected a ")"
+
+../trans.cu(42): error: this declaration has no storage class or type specifier
+
+../trans.cu(42): error: declaration is incompatible with "int printf(const char *, ...)"
+/usr/local/cuda-8.0/bin/../targets/x86_64-linux/include/common_functions.h(129): here
+
+../trans.cu(42): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+../trans.cu(43): error: expected a declaration
+
+../trans.cu(44): error: expected a declaration
+
+11 errors detected in the compilation of "/tmp/tmpxft_00006fa2_00000000-7_trans.cpp1.ii".
+make: *** [trans.o] Error 2
+10:27:35 **** Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:27:37 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+make: Nothing to be done for `all'.
+10:29:16 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:40:49 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+../trans.cu(42): error: identifier "A_t" is undefined
+
+../trans.cu(53): error: identifier "i" is undefined
+
+2 errors detected in the compilation of "/tmp/tmpxft_000072e8_00000000-7_trans.cpp1.ii".
+make: *** [trans.o] Error 2
+10:41:13 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+../trans.cu(42): error: identifier "A_t" is undefined
+
+../trans.cu(53): error: identifier "i" is undefined
+
+2 errors detected in the compilation of "/tmp/tmpxft_00007340_00000000-7_trans.cpp1.ii".
+make: *** [trans.o] Error 2
+10:42:15 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+../trans.cu(53): error: identifier "i" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_00007394_00000000-7_trans.cpp1.ii".
+make: *** [trans.o] Error 2
+10:42:42 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:43:50 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:45:47 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:48:13 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+../trans.cu(58): error: identifier "i" is undefined
+
+../trans.cu(58): error: identifier "j" is undefined
+
+2 errors detected in the compilation of "/tmp/tmpxft_000075fd_00000000-7_trans.cpp1.ii".
+make: *** [trans.o] Error 2
+10:49:05 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:49:58 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:50:13 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:50:24 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+make: Nothing to be done for `all'.
+10:51:23 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+make: Nothing to be done for `all'.
+10:55:23 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+Building file: ../trans.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0   -odir "." -M -o "trans.d" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false  -x cu -o  "trans.o" "../trans.cu"
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building: ../trans.cu
+ 
+Building target: transpose
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -link -o  "transpose"  ./trans.o   
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Finished building target: transpose
+ 
+10:58:25 **** Build of configuration Debug for project trans_2d.cu ****
+make all 
+Building file: ../trans_2d.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_52,code=sm_52  -odir "." -M -o "trans_2d.d" "../trans_2d.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52  -x cu -o  "trans_2d.o" "../trans_2d.cu"
+Finished building: ../trans_2d.cu
+ 
+Building target: trans_2d.cu
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_52,code=compute_52 -gencode arch=compute_52,code=sm_52 -link -o  "trans_2d.cu"  ./trans_2d.o   
+Finished building target: trans_2d.cu
+ 
+10:58:49 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+make: Nothing to be done for `all'.
+11:06:02 **** Incremental Build of configuration Debug for project transpose ****
+make all 
+make: Nothing to be done for `all'.

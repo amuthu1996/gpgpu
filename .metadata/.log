@@ -1,0 +1,83 @@
+!SESSION 2017-05-18 09:32:16.889 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.nvidia.cuda.ide.build 4 0 2017-05-18 09:32:45.931
+!MESSAGE Adding CUDA Toolkit 8.0 (id=com.nvidia.cuda.ide.toolchain.eight_zero.exe.release) to the list of preferred toolchains
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-18 09:33:16.835
+!MESSAGE Indexed 'sample1' (0 sources, 0 headers) in 0.004 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2017-05-24 09:49:42.339 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-24 09:49:52.873
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-24 09:51:34.829
+!MESSAGE Indexed 'transpose' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.jface 2 0 2017-05-24 10:27:44.823
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-05-24 10:27:44.823
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@450f6989,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76d9c4ca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY com.nvidia.cuda.ide.build 4 0 2017-05-24 10:57:02.201
+!MESSAGE Adding CUDA Toolkit 8.0 (id=com.nvidia.cuda.ide.toolchain.eight_zero.exe.release) to the list of preferred toolchains
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-24 10:57:24.821
+!MESSAGE Indexed 'trans_2d.cu' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-24 10:58:47.760
+!MESSAGE Indexed 'trans_2d' (2 sources, 53 headers) in 1.13 sec: 3,791 declarations; 6,275 references; 0 unresolved inclusions; 212,718 syntax errors; 118 unresolved names (1.2%)
+!SESSION 2017-05-24 13:02:41.257 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-24 13:02:46.186
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-05-24 13:03:05.809 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  gmConv.py
+Command-line arguments:  -os linux -ws gtk -arch x86_64 gmConv.py
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-24 13:03:09.835
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-05-24 13:59:25.402 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  gmConv.py
+Command-line arguments:  -os linux -ws gtk -arch x86_64 gmConv.py
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-24 13:59:29.995
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

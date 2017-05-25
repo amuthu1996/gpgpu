@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<cuda.h>
+#include<math.h>
+
+int main(){
+	unsigned int N = 1000000;
+	float *A_h,*A_d;
+
+	A_h = (float *)malloc(N * sizeof(float));
+	//initaializing 0-999 to all index
+	for(unsigned int i=0;i<N;i++){
+		A_h[i] = (float)(i%1000);
+	}
+
+	// Allocate device memory
+	cudaMalloc(&A_d, N*sizeof(float));
+
+	return 0;
+}
